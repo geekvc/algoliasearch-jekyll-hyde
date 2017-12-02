@@ -2,9 +2,22 @@
 markdown:         redcarpet
 highlighter:      pygments
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+url: https://geekvc.github.io/
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
 # Setup
 title:            Geekvc Blogs
@@ -15,6 +28,9 @@ baseurl:          /algoliasearch-jekyll-hyde
 # Travis will install Bundler dependencies in ./vendor, so we need to exclude it
 # otherwise Jekyll will try to build it (and fail)
 exclude:          [vendor]
+
+
+
 
 author:
   name:           'Algolia'
